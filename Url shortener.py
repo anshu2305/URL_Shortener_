@@ -3,7 +3,6 @@
 
 # # URL shortener in Python
 
-# In[ ]:
 
 
 import tkinter as tk
@@ -25,6 +24,7 @@ w.resizable(False, False)
 entry = tk.Entry(w)
 entry.bind("<Return>", shorturl)
 entry.pack()
+tk.Label(w, text="Press Enter to see the results", font="Helvetica 10").pack()
 res = tk.Label(w)
 res.pack()
 btn = tk.Button(w, text = '  Exit  ', bd = '3', command = w.destroy)      
